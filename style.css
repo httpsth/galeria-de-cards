@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#container { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card1 { 
+    background-color: rgb(0, 204, 255);
+}
+
+#card2{ 
+    background-color: rgb(177, 205, 50);
+}
+
+#card3 {
+    background-color: salmon;
+}
+
+#card4 {
+    background-color: salmon;
+}
+
+#card5 {
+    background-color: rgb(0, 204, 255);
+}
+
+#card6 { 
+    background-color: rgb(177, 205, 50);
+}
+
+/* Tablets e telas a partir de 600px */
+@media screen and (min-width: 600px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telas grandes a partir de 1024px */
+@media screen and (min-width: 1024px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
